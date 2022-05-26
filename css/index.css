@@ -1,0 +1,222 @@
+@import url(common.css);
+
+main > div > .New{
+    background-color: #FFF5F5;
+    margin:4% 0 ;
+    padding: 3% 20%;
+
+}
+main > div > .New > h2{
+    font-size: 1.5rem;
+    color:#FF8888 ;
+    text-align: center;
+    margin-bottom: 5%;
+    
+}
+main > div > .New > ul{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+main > div > .New > ul > li{
+    margin-right: 25px;
+    position: relative;  
+}
+main > div > .New > ul > li > span{
+    position: absolute;
+    right:0;
+    top:0;
+    opacity: 0.4;
+}
+main > div > .New > ul > li > a{
+    display:inline-block;
+    width: 360px;
+    height: 360px;
+    box-shadow:0px 5px 5px 0px gray;
+}
+main > div > .New > ul > li > a > img{
+    width: 100%;
+    height: 100%;
+}
+main > div > .New > ul > li > p{
+    text-align: center;
+    width: 309px;
+    padding: 15px 0;
+    border-radius: 13px;
+    background-color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 8%;
+    bottom: 5%;
+}
+main > div > .New > ul > li > p > b{
+    color: #952828;
+}
+
+.New > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.New > div > span{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #FF8888;
+    margin:4% 10px 10px 10px;
+    box-shadow: 0px 2px 2px 0px gray;
+}
+
+.Best{
+    border-bottom: 3px solid #FFF5F5;
+    padding-bottom: 2%;
+}
+.Best > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.Best > ul > li{
+    margin: 3%;
+    position: relative;
+}
+.Best > ul > li > span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.4;
+}
+.Best > ul > li > a{
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    border: 1px solid #E0DFDF;
+}
+.Best > ul > li > a > img{
+    width: 100%;
+    height: 100%;
+}
+.Best > ul > li > p{
+    margin-top: 10%;
+    text-align: center;
+}
+.Best > ul > li > p > b{
+    color: #952828;
+}
+.Best > h2{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #FF8888;
+    margin-bottom: 2%;
+}
+.Best > h2 > b{
+    font-size: 1rem;
+}
+
+
+
+.Review > h2{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #FF8888;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+.Review > h2 >b{
+    font-size: 1rem;
+}
+.Review > div{
+    margin: 0 auto;
+    width: 100%;
+}
+.Community{
+    margin: 0px auto;
+    width: 70%;
+}
+.Community input[type=radio]{
+    display: none;
+}
+.Community input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    width: 33%;
+    padding: 30px 0;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    font-weight:bold;
+    font-size: 1.2rem;
+}
+.Community input[type=radio]:checked+label{
+  border-bottom: none;
+  background-color: white;
+}
+.Community input[type=radio]+label{
+ background-color:#FCFBFB ;
+}
+
+.Review > div > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-left: 0.4%;
+}
+.Review > div > ul > li{
+    width: 404px;
+    height: 544px;
+    border: 1px solid gray;
+    margin: 1%;
+    box-shadow:0px 2px 2px 0px gray;
+}
+.Review > div > ul > li > figure{
+    width: 354px;
+    height: 376px;
+    margin: 26px 25px 0 25px;
+}
+.Review > div > ul > li > figure > img{
+    width: 100%;
+    height: 100%;
+}
+.Review > div > ul > li > div{
+    position: relative;
+}
+.Review > div > ul > li > div > a{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    border: 1px solid rgb(82, 82, 82);
+    margin-left: 25px;
+    margin-top: 35px;
+    
+}
+.Review > div > ul > li > div > a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+.Review > div > ul > li > div > span{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.Review > div > ul > li > div > span::after{
+    content:'';
+    display: block;
+    width: 274px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(36, 36, 36);
+}
+.Review > div > ul > li > div > p{
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+}
