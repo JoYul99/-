@@ -220,3 +220,45 @@ main > div > .New > ul > li > p > b{
     bottom: 20%;
     left: 25%;
 }
+
+.gesipan{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    border-collapse:collapse;
+    border-top: 5px solid #797979;
+    margin-top: 4%;
+}
+.gesipan th, .gesipan td{
+    padding: 1% 0;
+    border-bottom: 1px solid #797979;
+    text-align: center;
+}
+.list_number{
+    padding-top:25px;
+    text-align:center;
+    margin-bottom: 8%;
+}
+.list_n_menu{
+    padding:3px;
+    margin:3px;
+    text-align:center;
+}
+.list_n_menu a{
+    padding:5px 8px 4px 8px;
+    margin: 2px;
+    border: 1px solid #999;
+    color: #666;
+    text-decoration: none;
+}
+.list_n_menu a:hover{
+    border: 1px solid #999;
+    background-color:#797979;
+    color: white;
+}
+.list_n_menu a:active{
+    border: 1px solid #999;
+    color: #666;
+}
+
+
