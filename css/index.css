@@ -181,7 +181,7 @@ main > div > .New > ul > li > p > b{
     height: 376px;
     margin: 26px 25px 0 25px;
 }
-.Review > div > ul > li > figure > img{
+.Review > div > ul > li > figure > a > img{
     width: 100%;
     height: 100%;
 }
