@@ -192,7 +192,6 @@ footer > div{
     width: 70%;
     margin: 0 auto;    
 }
- 
 footer > div > .left > a:nth-of-type(1){
     display: inline-block;
     font-size: 0px;
