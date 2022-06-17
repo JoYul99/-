@@ -1,46 +1,47 @@
 @import url(common.css);
 
-main > div > .New{
+main > div > .mySwiper{
     background-color: #FFF5F5;
     margin:4% 0 ;
     padding: 3% 20%;
+    overflow: hidden;
 
 }
-main > div > .New > h2{
+main > div > .mySwiper > h2{
     font-size: 1.5rem;
     color:#FF8888 ;
     text-align: center;
     margin-bottom: 5%;
     
 }
-main > div > .New > ul{
+main > div > .mySwiper > .swiper-wrapper{
     display: flex;
     align-content: center;
     justify-content: space-between;
     width: 100%;
-    overflow: hidden;
+    
 }
-main > div > .New > ul > li{
+main > div > .mySwiper > .swiper-wrapper > .swiper-slide{
     margin-right: 25px;
     position: relative;  
 }
-main > div > .New > ul > li > span{
+main > div > .mySwiper > .swiper-wrapper > .swiper-slide > span{
     position: absolute;
     right:0;
     top:0;
     opacity: 0.4;
 }
-main > div > .New > ul > li > a{
+main > div > .mySwiper > .swiper-wrapper > .swiper-slide > a{
     display:inline-block;
     width: 360px;
     height: 360px;
     box-shadow:0px 5px 5px 0px gray;
 }
-main > div > .New > ul > li > a > img{
+main > div > .mySwiper > .swiper-wrapper > .swiper-slide > a > img{
     width: 100%;
     height: 100%;
 }
-main > div > .New > ul > li > p{
+main > div > .mySwiper > .swiper-wrapper > .swiper-slide > p{
     text-align: center;
     width: 309px;
     padding: 15px 0;
@@ -51,23 +52,23 @@ main > div > .New > ul > li > p{
     left: 8%;
     bottom: 5%;
 }
-main > div > .New > ul > li > p > b{
+main > div > .mySwiper > .swiper-wrapper > .swiper-slide > p > b{
     color: #952828;
 }
 
-.New > div{
+.mySwiper > .swiper-pagination{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.New > div > span{
+/* .mySwiper > div > span{
     width: 14px;
     height: 14px;
     border-radius: 7px;
     background-color: #FF8888;
     margin:4% 10px 10px 10px;
     box-shadow: 0px 2px 2px 0px gray;
-}
+} */
 
 .Best{
     border-bottom: 3px solid #FFF5F5;

@@ -30,66 +30,75 @@
                     
                 </div>
                 <a href="#">마이페이지</a>
-                <a href="#">장바구니</a>
+                <a href="#">장바구니</a> 
             </div>
         </div>
     </header>
     <main>
         <div>
-            <div class="New">
+            <div class="swiper mySwiper">
                 <h2>띵동~신상품이 왔어요!</h2>
-                <ul>
-                    <li>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="subpage2.html"><img src="img/New Main/New Main A.jpg" alt=""></a>
                         <p>곰돌이(대) <b>1,000원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main B.jpg" alt=""></a>
                         <p>(L)DIY 글씨 상자 <b>1,500원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main C.jpg" alt=""></a>
                         <p>사각글라스 <b>5,800원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main D.jpg" alt=""></a>
                         <p>(L)DIY 흔들의자 <b>9,000원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main A.jpg" alt=""></a>
                         <p>곰돌이(대) <b>1,000원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main A.jpg" alt=""></a>
                         <p>곰돌이(대) <b>1,000원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main A.jpg" alt=""></a>
                         <p>곰돌이(대) <b>1,000원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main A.jpg" alt=""></a>
                         <p>곰돌이(대) <b>1,000원</b></p>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <span>♥</span>
                         <a href="#"><img src="img/New Main/New Main A.jpg" alt=""></a>
                         <p>곰돌이(대) <b>1,000원</b></p>
                     </li>
                 </ul>
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <div class="swiper-pagination"></div>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                  var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                    },
+                  });
+                </script>
             </div>
             <div class="Best">
                 <h2>Best Item<br><b>없어서 못 구하는 최애템!</b></h2>
