@@ -1,0 +1,14 @@
+@import url(common.css);
+
+.h2b > h2{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #FF8888;
+    margin: 0px auto;
+    margin-bottom: 3%;
+    margin-top: 7%;
+    background-color:#FFF5F5;
+    width: 150px;
+    padding: 5px;
+    
+}

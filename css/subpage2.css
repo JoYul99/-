@@ -13,7 +13,7 @@ main > div{
     padding-bottom: 3%;
     border-top: 1px solid #797979;
     border-bottom: 1px solid #797979;
-    justify-content: center;
+    justify-content: space-between;
     
 }
 main > div > div > h2{
@@ -22,7 +22,7 @@ main > div > div > h2{
     color: #FF8888;
     margin: 0px auto;
     margin-bottom: 3%;
-    margin-top: 7%;
+    margin-top: 9%;
     background-color:#FFF5F5;
     width: 180px;
     padding: 5px 0;
@@ -30,21 +30,58 @@ main > div > div > h2{
 .image{
     width: 470px;
     height: 400px;
-    border: 1px solid #797979;
-} 
+    position: relative;
+    margin-left: 10%;
+    border: 1px solid black;
+}
+.image > div{
+    /* border: 1px solid #a3a3a3; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
 .image > figure > figcaption{
     width: 70px;
     height: 70px;
-    border: 1px solid #797979;
+
+}
+.image > figure > .img431 > img{
+    width: 100%;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    border-top: none;
 }
 .image > figure > figcaption > img{
     width: 100%;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+.image > figure > figcaption:hover > img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
 }
 
 .menu2{
-    margin-left: 10%;
+    margin-right: 16%;
 }
-.menu2 > table{
+table {
+    border-collapse: separate;
+    border-spacing:30px 12px;
 }
 .menu2 > table  tr .won{
     color: #952828;;
@@ -59,5 +96,96 @@ main > div > div > h2{
 .menu2 > table  tr  td  input{
     display: inline-block;
     width: 50px;
-
+}
+.qrcode{
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+.qrcode > p{
+    width: 120px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 5%;
+}
+.qrcode > figure{
+    width: 90px;
+    height: 90px;
+}
+.qrcode > figure > figcaption{
+    border: 1px solid #797979;
+}
+.qrcode > figure > figcaption > img{
+    width: 100%;
+    height: 100%;
+}
+.btn1 > a{
+    margin-left: 8%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 34px;
+    padding: 17px 0;
+    font-weight: bold;
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    margin-top: 2%;
+}
+.btn2 > a{
+    margin-left: 8%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 34px;
+    padding: 17px 0;
+    font-weight: bold;
+    background-color: #FF8888;
+    color: white;
+    margin-top: 2%;
+    width: 400px;
+    text-align: center;
+}
+.reviewmenu{
+    margin: 0px auto;
+    width: 75%;
+    margin-top: 5%;
+}
+.reviewmenu input[type=radio]{
+    display: none;
+}
+.reviewmenu input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    width: 32%;
+    padding: 30px 0;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    font-weight:bold;
+    font-size: 1.2rem;
+}
+.reviewmenu input[type=radio]:checked+label{
+border-bottom: none;
+background-color: white;
+}
+.reviewmenu input[type=radio]+label{
+background-color:#FCFBFB ;
+}
+.sul{
+    width: 75%;
+    margin: 8% auto;
+    
+}
+.sul > figure{
+}
+.sul > figure > figcaption{
+    width: 800px;
+    height: 800px;
+    display: block;
+    margin: 0 auto;
+}
+.sul > figure > figcaption > img{
+    width: 100%;
+    height: 100%;
+    
 }

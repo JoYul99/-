@@ -26,6 +26,7 @@ header{
 header > div{
     width: 70%;
     margin: 0 auto;
+    position: relative;
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
@@ -34,15 +35,94 @@ header > div{
 }
 
 
-.menu > span{
-    display: block;
-    width: 20px;
-    height: 3px;
-    margin: 2px 0;
-    background-color: black;
+.menu {
+    position: absolute;
+    top: 44%;
+    left: 1.5%;
+    height: 150px;
+    max-width: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+    background-color: rgb(235, 235, 235);
+}
+.menu > div > a{
+    font-size: 0;
+    position: absolute;
+    top: 10%;
+    left: 5%;
 }
 
-.home{padding-left:20%;}
+.burger-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    padding: 8px 0;
+    top: 44%;
+    left:0;
+    user-select: none;
+    width: auto;
+    margin: 0;
+}
+
+.burger-icon .burger-sticks {
+    background: #333;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.burger-icon .burger-sticks:before,
+.burger-icon .burger-sticks:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.burger-icon .burger-sticks:before {
+    top: 5px;
+}
+
+.burger-icon .burger-sticks:after {
+    top: -5px;
+}
+
+.burger-check {
+    display: none;
+}
+
+.burger-check:checked~.menu {
+    max-width: 400px;
+}
+.burger-check:checked~.menu > div > a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks {
+    background: transparent;
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:before {
+    transform: rotate(-45deg);
+}
+
+.burger-check:checked~.burger-icon .burger-sticks:after {
+    transform: rotate(45deg);
+}
+
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+    top: 0;
+}
+
+.home{margin-left:43.5%;}
 
 .home > a > h1{
     font-size: 2rem;
@@ -112,7 +192,6 @@ footer > div{
     width: 70%;
     margin: 0 auto;    
 }
- 
 footer > div > .left > a:nth-of-type(1){
     display: inline-block;
     font-size: 0px;
