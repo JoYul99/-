@@ -26,38 +26,71 @@ main{
     width: 45%;
     padding: 3.5% 0;
 }
-.join-us{
-    width: 45%;
-    padding: 3.5% 0;
-}
 .login-form > div{
     width: 100%;
     height: 300px;
     background-color: #FFE3E3;
     padding: 90px;
+    position: relative;
 }
 .login-form > div > div:nth-of-type(1) {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.login-form > div > div:nth-of-type(1) > div:nth-of-type(1){
+.login-text{
     width:300px;
 }
-.login-form > div > div:nth-of-type(1) > div:nth-of-type(1) > input{
+.login-text > input{
     width: 276px;
     padding: 9px;
     margin: 3px 0;
-    border-style: none;
+    border: none;
+
 }
-login-form > div > div:nth-of-type(1) > div:nth-of-type(2) > input{
-    display: inline;
-    padding: 20px;
-    
+.login-btn > input{
+    border: none;
+    height: 107px;
+    margin-left: 6px;
+    width: 100px;
+    text-align: center;
+    background-color: #FF8888;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 44px; bottom: 100px;
 }
 .join-us > div{
     width: 100%;
     height: 300px;
     background-color: #FFE3E3;
     padding: 90px;
+}
+.login-id{
+    /* border: 1px solid black; */
+    width: 300px;
+    position: absolute;
+    left: 36px; bottom: 100px;
+
+}
+.login-id > a{
+    display: inline-block;
+    width:136px;
+    padding: 2px;
+    background-color: #C4C4C4;
+    color: #fff;
+    margin-top: 6px;   
+}
+.join-us{
+    width: 45%;
+    padding: 3.5% 0;
+}
+.join-us > div > a{
+    display: inline-block;
+    width: 286px;
+    padding: 40px 0;
+    background-color: #FF8888;
+    text-align: center;
 }
