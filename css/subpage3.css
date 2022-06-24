@@ -40,13 +40,24 @@ main{
 }
 .login-text{
     width:300px;
+    position: relative;
+    height: 100px;
 }
 .login-text > input{
     width: 276px;
     padding: 9px;
     margin: 3px 0;
-    border: none;
-
+    border: none;    
+}
+.login-text > .text-field1{
+    position: absolute;
+    left: -15%;
+    top: 0%;
+}
+.login-text > .text-field2{
+    position: absolute;
+    left: -15%;
+    top: 45%;
 }
 .login-btn > input{
     border: none;
@@ -60,19 +71,19 @@ main{
     font-size: 1.1rem;
     cursor: pointer;
     position: absolute;
-    right: 44px; bottom: 100px;
+    right: 18%; bottom: 33%;
 }
 .join-us > div{
     width: 100%;
     height: 300px;
     background-color: #FFE3E3;
-    padding: 90px;
+    padding: 10%;
 }
 .login-id{
     /* border: 1px solid black; */
     width: 300px;
     position: absolute;
-    left: 36px; bottom: 100px;
+    left: 15%; bottom: 33%;
 
 }
 .login-id > a{
@@ -93,4 +104,23 @@ main{
     padding: 40px 0;
     background-color: #FF8888;
     text-align: center;
+    margin-top: 4%;
+    color: #FFF;
+}
+.join-us > div > span{
+    font-weight: bold;
+    color: #797979;
+}
+.join-us > div > span > b{
+   font-size: 0.8rem;
+}
+.login-form > h3{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 7%;
+}
+.join-us > h3{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 7%;
 }
