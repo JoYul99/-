@@ -12,3 +12,52 @@
     padding: 5px;
     
 }
+main{
+    width: 70%;
+    margin: 7% auto;
+}
+.login{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.login-form{
+    width: 45%;
+    padding: 3.5% 0;
+}
+.join-us{
+    width: 45%;
+    padding: 3.5% 0;
+}
+.login-form > div{
+    width: 100%;
+    height: 300px;
+    background-color: #FFE3E3;
+    padding: 90px;
+}
+.login-form > div > div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form > div > div:nth-of-type(1) > div:nth-of-type(1){
+    width:300px;
+}
+.login-form > div > div:nth-of-type(1) > div:nth-of-type(1) > input{
+    width: 276px;
+    padding: 9px;
+    margin: 3px 0;
+    border-style: none;
+}
+login-form > div > div:nth-of-type(1) > div:nth-of-type(2) > input{
+    display: inline;
+    padding: 20px;
+    
+}
+.join-us > div{
+    width: 100%;
+    height: 300px;
+    background-color: #FFE3E3;
+    padding: 90px;
+}
